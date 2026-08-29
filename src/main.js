@@ -1,6 +1,5 @@
 import { CHECKOUT_URL } from './config.js';
 import { trackEvent } from './tracking.js';
-import './styles.css';
 const services=['Criação de posts e legendas para negócios locais','Roteiros de vídeos curtos para Reels, TikTok e Shorts','Configuração assistida de anúncios simples','Atendimento inicial e respostas para WhatsApp','E-mails e mensagens de relacionamento','Páginas e textos de oferta para pequenos negócios','Organização de ideias, calendário e processos comerciais'];
 const modules=['Fundamentos: como usar IA com responsabilidade','Escolha do serviço e posicionamento simples','Montagem do kit de entrega e 100 prompts','Prospecção ativa com 30 mensagens prontas','Diagnóstico, proposta e tabela de preços inicial','Execução do primeiro projeto com checklist','Plano de 7 dias para sair da teoria e vender'];
 const receives=['100 prompts organizados por serviço','30 mensagens de prospecção editáveis','Modelo de proposta comercial','Tabela de preços inicial para começar com clareza','Checklist do primeiro cliente','Plano de execução de 7 dias','Bônus de organização e entrega profissional'];
