@@ -1,1 +1,1 @@
-export const CHECKOUT_URL = 'https://pay.kiwify.com.br/checkout-placeholder';
+export const CHECKOUT_URL = 'https://pay.kiwify.com.br/FNActtB';
