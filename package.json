@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "build": "rm -rf dist && mkdir -p dist && cp -r index.html src public favicon.svg og-image.svg robots.txt sitemap.xml ia-pra-renda produto obrigado servicos prospeccao dist/",
+    "check": "node --check src/main.js && node --check src/config.js && node --check src/tracking.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module"
+}
