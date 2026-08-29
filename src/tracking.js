@@ -37,10 +37,11 @@ export function trackEvent(name, payload = {}) {
   }
 
   if (name === 'click_checkout') {
-    window.fbq('track', 'InitiateCheckout', {
+    window.fbq('trackCustom', 'ClickCheckout', {
       content_name: 'IA PRA RENDA',
       value: 37,
-      currency: 'BRL'
+      currency: 'BRL',
+      ...payload
     });
   }
 
