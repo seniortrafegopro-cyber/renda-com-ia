@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://renda-com-ia.vercel.app/sitemap.xml
