@@ -55,7 +55,7 @@ function nav() {
   return `<nav class="nav">
     <a class="brand" href="/"><span class="logo">IA</span><span><strong>IA para Negócios</strong><small>e Renda Extra</small></span></a>
     <div class="navlinks"><a href="#aplicacoes">Aplicações</a><a href="#modulos">Módulos</a><a href="#conteudo">Conteúdo</a><a href="#faq">FAQ</a></div>
-    <button class="btn buy navBuy" data-source="nav">Quero começar</button>
+    <button class="btn buy navBuy" data-source="nav">R$97 → R$37</button>
   </nav>`;
 }
 
@@ -77,7 +77,13 @@ function landing() {
           <span class="badge">✦ Treinamento profissional • acesso imediato</span>
           <h1>Aprenda a usar Inteligência Artificial para <span class="gradient">melhorar negócios e criar novas possibilidades de renda extra.</span></h1>
           <p class="lead">O <strong>${PRODUCT_NAME}</strong> é um treinamento prático para quem quer entender IA além do básico e aplicá-la em tarefas reais: produtividade, conteúdo, atendimento, vendas, processos e serviços digitais que podem ser oferecidos a empresas.</p>
-          <div class="heroActions"><button class="btn buy primaryCta" data-source="hero">Quero aprender IA na prática por R$37 →</button><a class="btn secondary" href="#modulos">Ver o programa completo</a></div>
+          <div style="margin:1.1rem 0 1.2rem;padding:1rem 1.15rem;border:1px solid rgba(249,115,22,.45);border-radius:18px;background:linear-gradient(135deg,rgba(249,115,22,.12),rgba(124,58,237,.10));display:inline-block;box-shadow:0 12px 35px rgba(0,0,0,.18)">
+            <div style="font-size:.78rem;font-weight:800;letter-spacing:.08em;color:#fb923c;text-transform:uppercase">Oferta especial de lançamento</div>
+            <div style="margin-top:.35rem;font-size:1rem;color:#cbd5e1">De <span style="text-decoration:line-through;text-decoration-thickness:2px;color:#94a3b8">R$97,00</span> por apenas</div>
+            <div style="font-size:2rem;font-weight:900;line-height:1;color:#fff;margin-top:.2rem">R$37,00</div>
+            <div style="margin-top:.35rem;font-size:.9rem;color:#cbd5e1"><strong style="color:#fb923c">Economize R$60,00</strong> • acesso imediato</div>
+          </div>
+          <div class="heroActions"><button class="btn buy primaryCta" data-source="hero">Quero aproveitar a oferta por R$37 →</button><a class="btn secondary" href="#modulos">Ver o programa completo</a></div>
           <div class="trustRow"><span>✓ Para iniciantes</span><span>✓ 7 módulos estruturados</span><span>✓ Garantia de 7 dias</span></div>
         </div>
         <aside class="heroCard premiumPanel">
@@ -174,7 +180,7 @@ function landing() {
       <section class="finalCta"><div><span class="eyebrow">SUA PRÓXIMA ETAPA</span><h2>Use a IA para trabalhar melhor — e abra espaço para novas oportunidades.</h2><p class="lead">Aprenda fundamentos, prompting, produtividade, serviços, prospecção e execução em um treinamento criado para sair da teoria.</p><button class="btn buy primaryCta" data-source="final">Acessar por R$37 →</button></div></section>
     </main>
     ${footer()}
-    <div class="mobileBar"><div><small>Acesso completo</small><strong>R$37</strong></div><button class="btn buy" data-source="mobile">Quero acessar</button></div>
+    <div class="mobileBar"><div><small><span style="text-decoration:line-through;color:#94a3b8">R$97</span> • oferta</small><strong>R$37</strong></div><button class="btn buy" data-source="mobile">Aproveitar oferta</button></div>
   </div>`;
 }
 
