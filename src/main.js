@@ -153,15 +153,18 @@ function landing() {
 
       <section id="oferta" class="offerSection">
         <div class="offer premiumOffer">
-          <div class="offerTop"><span class="badge">CONDIÇÃO DE LANÇAMENTO</span><h2>Comece agora no ${PRODUCT_NAME}.</h2><p>Treinamento completo + biblioteca de execução + materiais editáveis + plano prático para aplicar o conhecimento.</p></div>
+          <div class="offerTop"><span class="badge">CONDIÇÃO ESPECIAL DE LANÇAMENTO</span><h2>Comece agora no ${PRODUCT_NAME}.</h2><p>Treinamento completo + biblioteca de execução + materiais editáveis + plano prático para aplicar o conhecimento.</p></div>
           <div class="valueStack">
             <div><span>Treinamento profissional</span><strong>7 módulos</strong></div>
             <div><span>Biblioteca prática</span><strong>100 prompts</strong></div>
             <div><span>Prospecção</span><strong>30 mensagens</strong></div>
             <div><span>Execução</span><strong>Modelos + checklists</strong></div>
           </div>
-          <div class="priceLabel">Acesso completo por</div><div class="price">R$37</div><p class="installmentNote">pagamento único • acesso liberado pela Kiwify</p>
-          <button class="btn buy offerBtn" data-source="offer">QUERO COMEÇAR AGORA →</button>
+          <div class="priceLabel">Oferta de lançamento</div>
+          <div style="font-size:1.15rem;color:#94a3b8;margin-top:.4rem">De <span style="text-decoration:line-through;text-decoration-thickness:2px">R$97,00</span> por apenas</div>
+          <div class="price">R$37</div>
+          <p class="installmentNote"><strong>Economize R$60,00</strong> • pagamento único • acesso liberado pela Kiwify</p>
+          <button class="btn buy offerBtn" data-source="offer">QUERO APROVEITAR A OFERTA →</button>
           <div class="guarantee"><strong>7 dias de garantia.</strong> Você pode conhecer o conteúdo e avaliar se o treinamento faz sentido para você.</div>
         </div>
       </section>
