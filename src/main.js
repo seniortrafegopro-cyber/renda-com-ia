@@ -55,7 +55,7 @@ function nav() {
   return `<nav class="nav">
     <a class="brand" href="/"><span class="logo">IA</span><span><strong>IA para Negócios</strong><small>e Renda Extra</small></span></a>
     <div class="navlinks"><a href="#aplicacoes">Aplicações</a><a href="#modulos">Módulos</a><a href="#conteudo">Conteúdo</a><a href="#faq">FAQ</a></div>
-    <button class="btn buy navBuy" data-source="nav">R$97 → R$37</button>
+    <button class="btn buy navBuy" style="padding:.88rem 1.3rem;font-size:.92rem;font-weight:900" data-source="nav">OFERTA: R$97 → R$37</button>
   </nav>`;
 }
 
@@ -77,14 +77,15 @@ function landing() {
           <span class="badge">✦ Treinamento profissional • acesso imediato</span>
           <h1>Aprenda a usar Inteligência Artificial para <span class="gradient">melhorar negócios e criar novas possibilidades de renda extra.</span></h1>
           <p class="lead">O <strong>${PRODUCT_NAME}</strong> é um treinamento prático para quem quer entender IA além do básico e aplicá-la em tarefas reais: produtividade, conteúdo, atendimento, vendas, processos e serviços digitais que podem ser oferecidos a empresas.</p>
-          <div style="margin:1.1rem 0 1.2rem;padding:1rem 1.15rem;border:1px solid rgba(249,115,22,.45);border-radius:18px;background:linear-gradient(135deg,rgba(249,115,22,.12),rgba(124,58,237,.10));display:inline-block;box-shadow:0 12px 35px rgba(0,0,0,.18)">
-            <div style="font-size:.78rem;font-weight:800;letter-spacing:.08em;color:#fb923c;text-transform:uppercase">Oferta especial de lançamento</div>
-            <div style="margin-top:.35rem;font-size:1rem;color:#cbd5e1">De <span style="text-decoration:line-through;text-decoration-thickness:2px;color:#94a3b8">R$97,00</span> por apenas</div>
-            <div style="font-size:2rem;font-weight:900;line-height:1;color:#fff;margin-top:.2rem">R$37,00</div>
-            <div style="margin-top:.35rem;font-size:.9rem;color:#cbd5e1"><strong style="color:#fb923c">Economize R$60,00</strong> • acesso imediato</div>
+          <div style="margin:1.25rem 0 1.35rem;padding:1.15rem 1.3rem;border:1px solid rgba(249,115,22,.52);border-radius:20px;background:linear-gradient(135deg,rgba(249,115,22,.15),rgba(124,58,237,.12));display:inline-block;box-shadow:0 16px 45px rgba(0,0,0,.22),0 0 36px rgba(249,115,22,.06)">
+            <div style="font-size:.8rem;font-weight:900;letter-spacing:.1em;color:#fb923c;text-transform:uppercase">🔥 Oferta especial de lançamento</div>
+            <div style="margin-top:.4rem;font-size:1.05rem;color:#d8e2ee">De <span style="text-decoration:line-through;text-decoration-thickness:2px;color:#94a3b8">R$97,00</span> por apenas</div>
+            <div style="font-size:2.35rem;font-weight:950;line-height:1;color:#fff;margin-top:.22rem;letter-spacing:-.04em">R$37,00</div>
+            <div style="margin-top:.42rem;font-size:.93rem;color:#d6dee9"><strong style="color:#fb923c">Economize R$60,00</strong> • pagamento único • acesso imediato</div>
           </div>
-          <div class="heroActions"><button class="btn buy primaryCta" data-source="hero">Quero aproveitar a oferta por R$37 →</button><a class="btn secondary" href="#modulos">Ver o programa completo</a></div>
-          <div class="trustRow"><span>✓ Para iniciantes</span><span>✓ 7 módulos estruturados</span><span>✓ Garantia de 7 dias</span></div>
+          <div class="heroActions"><button class="btn buy primaryCta" style="padding:1.18rem 1.7rem;font-size:1.02rem;font-weight:950;box-shadow:0 20px 52px rgba(6,182,212,.28)" data-source="hero">QUERO APROVEITAR A OFERTA POR R$37 →</button><a class="btn secondary" style="padding:1.08rem 1.5rem;font-size:.98rem" href="#modulos">Ver o programa completo</a></div>
+          <div style="margin-top:.8rem;color:#7f8fa6;font-size:.78rem">🔒 Compra processada pela Kiwify • acesso imediato após a confirmação • 7 dias de garantia</div>
+          <div class="trustRow"><span>✓ Para iniciantes</span><span>✓ 7 módulos estruturados</span><span>✓ 100 prompts profissionais</span></div>
         </div>
         <aside class="heroCard premiumPanel">
           <div class="panelGlow"></div>
@@ -170,17 +171,17 @@ function landing() {
           <div style="font-size:1.15rem;color:#94a3b8;margin-top:.4rem">De <span style="text-decoration:line-through;text-decoration-thickness:2px">R$97,00</span> por apenas</div>
           <div class="price">R$37</div>
           <p class="installmentNote"><strong>Economize R$60,00</strong> • pagamento único • acesso liberado pela Kiwify</p>
-          <button class="btn buy offerBtn" data-source="offer">QUERO APROVEITAR A OFERTA →</button>
+          <button class="btn buy offerBtn" style="padding:1.2rem 1.85rem;font-size:1.02rem;font-weight:950;min-width:min(100%,390px)" data-source="offer">QUERO APROVEITAR A OFERTA →</button>
           <div class="guarantee"><strong>7 dias de garantia.</strong> Você pode conhecer o conteúdo e avaliar se o treinamento faz sentido para você.</div>
         </div>
       </section>
 
       ${section('Dúvidas antes de começar','FAQ',`<div class="faq">${faq.map(([q,a])=>`<details><summary>${q}<span>+</span></summary><p class="muted">${a}</p></details>`).join('')}</div>`,'faq')}
 
-      <section class="finalCta"><div><span class="eyebrow">SUA PRÓXIMA ETAPA</span><h2>Use a IA para trabalhar melhor — e abra espaço para novas oportunidades.</h2><p class="lead">Aprenda fundamentos, prompting, produtividade, serviços, prospecção e execução em um treinamento criado para sair da teoria.</p><button class="btn buy primaryCta" data-source="final">Acessar por R$37 →</button></div></section>
+      <section class="finalCta"><div><span class="eyebrow">SUA PRÓXIMA ETAPA</span><h2>Use a IA para trabalhar melhor — e abra espaço para novas oportunidades.</h2><p class="lead">Aprenda fundamentos, prompting, produtividade, serviços, prospecção e execução em um treinamento criado para sair da teoria.</p><button class="btn buy primaryCta" style="padding:1.18rem 1.75rem;font-size:1.02rem;font-weight:950" data-source="final">APROVEITAR OFERTA POR R$37 →</button></div></section>
     </main>
     ${footer()}
-    <div class="mobileBar"><div><small><span style="text-decoration:line-through;color:#94a3b8">R$97</span> • oferta</small><strong>R$37</strong></div><button class="btn buy" data-source="mobile">Aproveitar oferta</button></div>
+    <div class="mobileBar" style="padding:.78rem .82rem;box-shadow:0 -14px 40px rgba(0,0,0,.35)"><div><small style="color:#fb923c;font-weight:900;letter-spacing:.035em">OFERTA DE LANÇAMENTO</small><div style="display:flex;align-items:baseline;gap:.42rem"><span style="text-decoration:line-through;color:#7f8fa6;font-size:.78rem">R$97</span><strong style="font-size:1.3rem">R$37</strong></div></div><button class="btn buy" style="padding:.88rem 1.15rem;font-size:.9rem;font-weight:950;min-height:48px" data-source="mobile">APROVEITAR OFERTA</button></div>
   </div>`;
 }
 
