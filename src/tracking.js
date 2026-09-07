@@ -1,6 +1,7 @@
 const EVENTS = ['view_landing', 'click_cta', 'click_checkout', 'view_offer', 'faq_open'];
 const META_PIXEL_ID = '2173643729873505';
-const PRODUCT_NAME = 'IA para Negócios e Renda Extra';
+const PRODUCT_NAME = 'Rota da Entrevista';
+const PRODUCT_VALUE = 19.9;
 
 function initMetaPixel() {
   if (window.fbq) return;
@@ -30,17 +31,22 @@ export function trackEvent(name, payload = {}) {
 
   if (name === 'view_landing') {
     window.fbq('track', 'ViewContent', {
+      content_ids: ['rota-da-entrevista'],
       content_name: PRODUCT_NAME,
-      content_category: 'Treinamento de Inteligência Artificial',
-      value: 37,
+      content_category: 'Desenvolvimento profissional e carreira',
+      content_type: 'product',
+      value: PRODUCT_VALUE,
       currency: 'BRL'
     });
   }
 
   if (name === 'click_checkout') {
-    window.fbq('trackCustom', 'ClickCheckout', {
+    window.fbq('track', 'InitiateCheckout', {
+      content_ids: ['rota-da-entrevista'],
       content_name: PRODUCT_NAME,
-      value: 37,
+      content_type: 'product',
+      num_items: 1,
+      value: PRODUCT_VALUE,
       currency: 'BRL',
       ...payload
     });
@@ -51,7 +57,11 @@ export function trackEvent(name, payload = {}) {
   }
 
   if (name === 'view_offer') {
-    window.fbq('trackCustom', 'ViewOffer', { value: 37, currency: 'BRL', content_name: PRODUCT_NAME });
+    window.fbq('trackCustom', 'ViewOffer', {
+      value: PRODUCT_VALUE,
+      currency: 'BRL',
+      content_name: PRODUCT_NAME
+    });
   }
 
   if (name === 'faq_open') {
