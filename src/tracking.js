@@ -1,7 +1,18 @@
-const EVENTS = ['view_landing', 'click_cta', 'click_checkout', 'view_offer', 'faq_open'];
+const EVENTS = [
+  'view_landing',
+  'click_cta',
+  'click_checkout',
+  'view_offer',
+  'faq_open',
+  'view_upsell',
+  'click_upsell_accept',
+  'click_upsell_decline'
+];
 const META_PIXEL_ID = '1083842784036393';
 const PRODUCT_NAME = 'Rota da Entrevista';
 const PRODUCT_VALUE = 19.9;
+const UPSELL_NAME = 'LinkedIn Estratégico';
+const UPSELL_VALUE = 29.9;
 
 function initMetaPixel() {
   if (window.fbq) return;
@@ -66,5 +77,34 @@ export function trackEvent(name, payload = {}) {
 
   if (name === 'faq_open') {
     window.fbq('trackCustom', 'FAQOpen', payload);
+  }
+
+  if (name === 'view_upsell') {
+    window.fbq('track', 'ViewContent', {
+      content_ids: ['linkedin-estrategico'],
+      content_name: UPSELL_NAME,
+      content_category: 'Desenvolvimento profissional e carreira',
+      content_type: 'product',
+      value: UPSELL_VALUE,
+      currency: 'BRL'
+    });
+  }
+
+  if (name === 'click_upsell_accept') {
+    window.fbq('trackCustom', 'UpsellAcceptClick', {
+      content_ids: ['linkedin-estrategico'],
+      content_name: UPSELL_NAME,
+      value: UPSELL_VALUE,
+      currency: 'BRL',
+      ...payload
+    });
+  }
+
+  if (name === 'click_upsell_decline') {
+    window.fbq('trackCustom', 'UpsellDecline', {
+      content_ids: ['linkedin-estrategico'],
+      content_name: UPSELL_NAME,
+      ...payload
+    });
   }
 }
