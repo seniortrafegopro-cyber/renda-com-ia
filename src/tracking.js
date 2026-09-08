@@ -52,7 +52,7 @@ export function trackEvent(name, payload = {}) {
   }
 
   if (name === 'click_checkout') {
-    window.fbq('track', 'InitiateCheckout', {
+    window.fbq('trackCustom', 'CheckoutClick', {
       content_ids: ['rota-da-entrevista'],
       content_name: PRODUCT_NAME,
       content_type: 'product',
