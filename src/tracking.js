@@ -1,5 +1,5 @@
 const EVENTS = ['view_landing', 'click_cta', 'click_checkout', 'view_offer', 'faq_open'];
-const META_PIXEL_ID = '2173643729873505';
+const META_PIXEL_ID = '1083842784036393';
 const PRODUCT_NAME = 'Rota da Entrevista';
 const PRODUCT_VALUE = 19.9;
 
