@@ -264,6 +264,7 @@
       }
       .kiwify-slot button:disabled { cursor: wait !important; opacity: .76; }
       #kiwify-upsell-cancel-trigger,
+      [id^="kiwify-upsell-cancel-trigger-"],
       .decline {
         display: inline-block !important;
         margin-top: 16px !important;
@@ -438,8 +439,11 @@
 
               <div class="kiwify-slot" id="kiwify-upsell-slot">
                 <!-- KIWIFY_UPSELL_START -->
-                <button type="button" disabled>Botão sendo conectado à Kiwify</button>
-                <a class="decline" href="/obrigado/">Não, quero seguir apenas com minha compra atual</a>
+                <div id="kiwify-upsell-UsUse1Q" data-upsell-url="" data-downsell-url="" style="--kiwify-upsell-accept-bg:#2563eb;--kiwify-upsell-accept-color:#FFFFFF">
+                  <button id="kiwify-upsell-trigger-UsUse1Q">SIM, QUERO ADICIONAR O LINKEDIN ESTRATÉGICO</button>
+                  <div id="kiwify-upsell-cancel-trigger-UsUse1Q">Não, obrigado. Quero acessar apenas a Rota da Entrevista.</div>
+                </div>
+                <script src="https://snippets.kiwify.com/upsell-v2/upsell.min.js"></script>
                 <!-- KIWIFY_UPSELL_END -->
               </div>
 
