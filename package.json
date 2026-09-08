@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "python3 -m http.server 5173",
-    "build": "rm -rf dist && mkdir -p dist && cp -r index.html src assets public favicon.svg og-image.svg hero-rota.svg robots.txt sitemap.xml ia-pra-renda produto obrigado servicos prospeccao matematica-sem-trava dist/",
-    "check": "node --check src/main.js && node --check src/config.js && node --check src/tracking.js && node --check src/rota.js"
+    "dev": "python3 -m http.server 5173 --directory matematica-sem-trava",
+    "build": "rm -rf dist && mkdir -p dist && cp -r matematica-sem-trava/. dist/",
+    "check": "node --check matematica-sem-trava/script.js"
   },
   "engines": {
     "node": ">=20"
