@@ -71,7 +71,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
   border-left: 1px solid rgba(4,20,37,.25);
   font-weight: 950;
 }
-.sales-bar s { opacity: .62; }
 
 .sales-hero {
   position: relative;
@@ -178,10 +177,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
   gap: 10px 16px;
   margin: 30px auto 20px;
 }
-.hero-price > span, .hero-price em { color: rgba(255,255,255,.64); font-size: .86rem; font-style: normal; }
-.hero-price > span s { color: rgba(255,255,255,.48); }
-.hero-price strong { color: var(--yellow); font-size: clamp(3.15rem, 7vw, 4.35rem); letter-spacing: -.06em; line-height: .9; text-shadow: 0 12px 34px rgba(255,200,46,.18); }
-.hero-price strong small { font-size: 1.05rem; letter-spacing: 0; }
+.hero-price > span, .hero-price em { color: rgba(255,255,255,.58); font-size: .8rem; font-style: normal; }
+.hero-price strong { color: var(--yellow); font-size: 2.5rem; letter-spacing: -.05em; line-height: 1; }
+.hero-price strong small { font-size: .9rem; letter-spacing: 0; }
 
 .sales-button {
   position: relative;
@@ -416,9 +414,8 @@ blockquote::before { position: absolute; top: 14px; left: 24px; color: var(--gre
 .offer-includes div { display: flex; align-items: center; gap: 11px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 9px; background: #f7faf8; font-size: .85rem; font-weight: 750; }
 .offer-includes span { display: grid; width: 24px; height: 24px; flex: 0 0 auto; place-items: center; border-radius: 50%; color: var(--navy-deep); background: var(--green); font-size: .68rem; font-weight: 950; }
 .offer-price { margin: 32px auto 24px; }
-.offer-price > span { display: block; color: var(--muted); font-size: .82rem; font-weight: 800; text-transform: uppercase; }
-.offer-price > span s { opacity: .68; }
-.offer-price strong { display: flex; align-items: flex-start; justify-content: center; color: var(--navy); font-size: 7.2rem; letter-spacing: -.09em; line-height: .92; }
+.offer-price > span { display: block; color: var(--muted); font-size: .74rem; font-weight: 750; text-transform: uppercase; }
+.offer-price strong { display: flex; align-items: flex-start; justify-content: center; color: var(--navy); font-size: 6rem; letter-spacing: -.09em; line-height: .98; }
 .offer-price small { margin: 17px 6px 0 0; color: var(--green-dark); font-size: 1rem; letter-spacing: 0; }
 .offer-price sup { margin-top: 12px; color: var(--green-dark); font-size: 1.8rem; letter-spacing: -.03em; }
 .sales-button-dark { color: var(--navy-deep); }
@@ -450,8 +447,7 @@ blockquote::before { position: absolute; top: 14px; left: 24px; color: var(--gre
 .final-content > p:not(.section-label):not(.checkout-message) { max-width: 680px; margin: 24px auto 0; color: rgba(255,255,255,.66); }
 .final-price { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 15px; margin: 30px 0 22px; }
 .final-price span, .final-price small { color: rgba(255,255,255,.54); font-size: .74rem; }
-.final-price span s { opacity: .72; }
-.final-price strong { color: var(--yellow); font-size: 3.15rem; letter-spacing: -.06em; line-height: 1; }
+.final-price strong { color: var(--yellow); font-size: 2.3rem; letter-spacing: -.05em; }
 .final-micro { display: block; margin-top: 14px; color: rgba(255,255,255,.43); font-size: .68rem; }
 
 .sales-footer { padding: 46px 0 98px; color: rgba(255,255,255,.45); background: #020c16; text-align: center; }
@@ -513,7 +509,7 @@ blockquote::before { position: absolute; top: 14px; left: 24px; color: var(--gre
   .vaga-list b { width: 42px; height: 42px; }
   #diagnostic-card { min-height: 0; padding: 30px 21px; }
   .offer-card { padding: 38px 20px; }
-  .offer-price strong { font-size: 5.7rem; }
+  .offer-price strong { font-size: 5rem; }
   .guarantee-inline { grid-template-columns: 68px 1fr; gap: 14px; }
   .guarantee-inline > span { width: 65px; height: 65px; }
   .final-content h2 br { display: none; }
@@ -537,8 +533,7 @@ blockquote::before { position: absolute; top: 14px; left: 24px; color: var(--gre
   }
   .mobile-offer > div { display: flex; flex-direction: column; line-height: 1.1; }
   .mobile-offer span { color: rgba(255,255,255,.48); font-size: .62rem; }
-  .mobile-offer span s { opacity: .62; }
-  .mobile-offer strong { color: var(--yellow); font-size: 1.55rem; letter-spacing: -.045em; }
+  .mobile-offer strong { color: var(--yellow); font-size: 1.3rem; }
   .mobile-offer .sales-button { width: auto; min-height: 48px; padding: 10px 15px; font-size: .7rem; }
 }
 
