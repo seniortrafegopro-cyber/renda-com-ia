@@ -10,7 +10,7 @@ const EVENTS = [
 ];
 const META_PIXEL_ID = '1083842784036393';
 const PRODUCT_NAME = 'Rota da Entrevista';
-const PRODUCT_VALUE = 5;
+const PRODUCT_VALUE = 37;
 const UPSELL_NAME = 'LinkedIn Estratégico';
 const UPSELL_VALUE = 29.9;
 
