@@ -19,7 +19,7 @@ h1{font-size:clamp(2.25rem,6vw,4.4rem);margin-bottom:18px}
 h2{font-size:clamp(1.9rem,5vw,3.25rem);margin-bottom:15px}
 .lead{color:var(--muted);font-size:clamp(1rem,2vw,1.16rem);line-height:1.55;margin-bottom:26px}
 .primary,.answer{width:100%;border:0;border-radius:14px;cursor:pointer;font-weight:900;transition:.18s ease}
-.primary{min-height:64px;padding:17px 20px;background:var(--green);color:#fff;text-transform:uppercase;letter-spacing:.02em;box-shadow:0 12px 30px rgba(30,155,112,.23)}
+.primary{display:flex;width:100%;min-height:64px;align-items:center;justify-content:center;padding:17px 20px;background:var(--green);color:#fff;text-transform:uppercase;letter-spacing:.02em;line-height:1.25;text-align:center;text-decoration:none;white-space:normal;overflow-wrap:anywhere;box-shadow:0 12px 30px rgba(30,155,112,.23)}
 .primary:hover{background:var(--green2);transform:translateY(-1px)}
 .micro{margin:12px 0 0;color:#8393a7;font-size:.78rem;text-align:center}
 .progress-wrap{margin-bottom:26px}
@@ -43,7 +43,7 @@ h2{font-size:clamp(1.9rem,5vw,3.25rem);margin-bottom:15px}
 .old{color:#9cabbc;font-size:.8rem}.old s{text-decoration-color:var(--danger);text-decoration-thickness:2px}
 .price{display:flex;justify-content:center;align-items:flex-start;gap:3px;margin:4px 0 10px;font-weight:900;letter-spacing:-.07em}
 .price small{margin-top:10px;color:var(--accent);font-size:.9rem;letter-spacing:0}.price strong{font-size:4.4rem;line-height:.9}.price sup{font-size:1rem;margin-top:7px;letter-spacing:0}
-.offer .primary{min-height:60px;font-size:.87rem}
+.offer .primary{min-height:60px;font-size:.87rem;padding-inline:16px}
 .trust{margin:10px 0 0;color:#8999ab;font-size:.68rem;line-height:1.35}
 .disclaimer{margin:12px 0 0;color:#718196;font-size:.66rem;text-align:center}
 .fade{animation:fade .22s ease both}
@@ -55,7 +55,7 @@ h2{font-size:clamp(1.9rem,5vw,3.25rem);margin-bottom:15px}
   .result-grid{grid-template-columns:1fr;gap:13px}.result-card{padding:17px 15px}
   .result-copy h2{font-size:1.45rem}.result-copy .lead{font-size:.84rem;margin-bottom:10px}.diagnosis{font-size:.78rem;padding:9px 10px;margin-bottom:10px}
   .included{font-size:.7rem;gap:5px 9px}.optional{font-size:.64rem;margin-top:9px}
-  .offer{padding:14px 13px}.price{margin:2px 0 8px}.price strong{font-size:3.6rem}.offer .primary{min-height:54px;font-size:.76rem;padding:12px}
+  .offer{padding:14px 13px}.price{margin:2px 0 8px}.price strong{font-size:3.6rem}.offer .primary{min-height:54px;font-size:.76rem;padding:12px 10px;line-height:1.2}
   .trust{font-size:.61rem}.disclaimer{font-size:.58rem;margin-top:7px}
 }
 @media(max-height:690px) and (max-width:680px){
