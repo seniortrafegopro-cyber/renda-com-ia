@@ -1,7 +1,19 @@
 import { CHECKOUT_URL } from './config.js';
 import { trackEvent } from './tracking.js';
 
-const CAMPAIGN_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src'];
+const CAMPAIGN_PARAMS = [
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_content',
+  'utm_term',
+  'utm_id',
+  'fbclid',
+  'gclid',
+  'ttclid',
+  'src',
+  'sck'
+];
 
 function buildCheckoutUrl() {
   const rawUrl = CHECKOUT_URL.trim();
@@ -31,7 +43,7 @@ function configureCheckout() {
     if (checkoutUrl) {
       link.href = checkoutUrl;
     } else {
-      link.href = '#oferta';
+      link.href = '#conteudo';
       link.classList.add('checkout-disabled');
       link.setAttribute('aria-disabled', 'true');
       link.textContent = link.dataset.location === 'mobile'
@@ -42,7 +54,6 @@ function configureCheckout() {
     link.addEventListener('click', (event) => {
       if (!checkoutUrl) {
         event.preventDefault();
-        document.querySelector('#oferta')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
 
@@ -62,31 +73,7 @@ function configureTracking() {
     path: window.location.pathname,
     referrer: document.referrer || 'direct'
   });
-
-  document.querySelectorAll('.faq-list details').forEach((item, index) => {
-    item.addEventListener('toggle', () => {
-      if (!item.open) return;
-      trackEvent('faq_open', {
-        index: index + 1,
-        question: item.querySelector('summary')?.textContent?.trim() || ''
-      });
-    });
-  });
-
-  const offerCard = document.querySelector('[data-offer-card]');
-  if (!offerCard || !('IntersectionObserver' in window)) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    if (!entries.some((entry) => entry.isIntersecting)) return;
-    trackEvent('view_offer');
-    observer.disconnect();
-  }, { threshold: 0.35 });
-
-  observer.observe(offerCard);
 }
-
-const currentYear = document.querySelector('#current-year');
-if (currentYear) currentYear.textContent = String(new Date().getFullYear());
 
 configureCheckout();
 configureTracking();
