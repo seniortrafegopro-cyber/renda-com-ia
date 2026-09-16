@@ -1,3 +1,5 @@
 dist/
+.fsm-access-code
+private/*.html
 node_modules/
 .DS_Store

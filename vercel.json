@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/financas-sob-medida/ferramenta/app",
+      "destination": "/api/financas-ferramenta"
+    }
+  ],
+  "functions": {
+    "api/financas-ferramenta.js": {
+      "includeFiles": "private/financas-tool.enc.json"
+    }
+  }
+}
