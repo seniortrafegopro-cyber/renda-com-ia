@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "dev": "python3 -m http.server 5173",
-    "build": "rm -rf dist && mkdir -p dist && cp -r index.html src assets public favicon.svg og-image.svg hero-rota.svg robots.txt sitemap.xml ia-pra-renda produto obrigado upsell servicos prospeccao financas-sob-medida rota-da-entrevista dist/",
-    "check": "node --check src/main.js && node --check src/config.js && node --check src/tracking.js && node --check src/rota.js"
+    "dev": "vite",
+    "build": "rm -rf dist && mkdir -p dist && cp -r index.html src assets public favicon.svg og-image.svg hero-rota.svg robots.txt sitemap.xml ia-pra-renda produto obrigado upsell servicos prospeccao financas-sob-medida rota-da-entrevista minha-paleta-ideal dist/",
+    "check": "node --check src/main.js && node --check src/config.js && node --check src/tracking.js && node --check src/rota.js && node --check src/gmn.js"
   },
   "engines": {
     "node": ">=20"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
 }
